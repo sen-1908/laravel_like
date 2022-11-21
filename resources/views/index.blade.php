@@ -18,7 +18,7 @@
                 "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
                 },
                 url: `/like/${postId}`,
-                type: "POST",
+                method: "POST",
             })
                 .done(function (data, status, xhr) {
                 console.log(data);
